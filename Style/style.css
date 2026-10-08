@@ -25,6 +25,11 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 .section-heading h2{
     font-size: 35px;
     font-weight: bold;
@@ -256,6 +261,77 @@ footer form input[type= "text"], input[type= "email"], footer form textarea{
     border: none;
     border-radius: 5px;
 } 
+
+@media screen and (max-width: 576px){
+    #skill {
+    padding-top: 60px;
+    width: 95%;
+}
+nav{
+    gap: 20px;
+}
+nav .menu{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#banner{
+    margin: 20px;
+    gap: 20px;
+    text-align: center;
+}
+#banner .banner-content h1{
+    font-size: 58px;
+}
+.btn-group{
+    justify-content: center;
+}
+header {
+    background: url(../images/header_bg.png), #FFF8F3;
+    background-repeat: no-repeat;
+    background-position:bottom right;
+}
+.section-heading h2 {
+    font-size: 30px;
+}
+#about .about-container {
+    padding: 20px;
+    width: 95%;
+}
+#about .about-info {
+    gap: 30px;
+}
+#summary{
+    padding-top: 60px;
+    width: 95%;
+    margin-bottom: 60px;
+}
+#summary .sections-heading h2{
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+#skill .skill-box,
+#about .about-info,
+footer .footer-container,
+#summary .resume-container,
+nav,
+#banner{
+    flex-direction: column;
+}
+.skill-card {
+    width: 100%;
+}
+footer{
+    padding: 80px 0px;
+}
+footer .footer-container,
+footer .social,
+footer form input[type= "text"], input[type= "email"], footer form textarea,
+.resume-card,
+.education,
+.experience{
+    width: 95%;
+}
+}
 
 
 
